@@ -1,0 +1,257 @@
+/* App Container */
+.app-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Task Form */
+.task-form {
+  margin-bottom: 20px;
+}
+
+.task-form .input-group {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-form .form-control {
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+
+.task-form .btn-primary {
+  background-color: #667eea;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.task-form .btn-primary:hover {
+  background-color: #5568d3;
+}
+
+/* Task Filter */
+.task-filter {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-filter .form-control {
+  border: 1px solid #e0e0e0;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.task-filter .btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+.task-filter .btn {
+  flex: 1;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.task-filter .btn-primary {
+  background-color: #667eea;
+  border-color: #667eea;
+}
+
+.task-filter .btn-outline-primary {
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.task-filter .btn-outline-primary:hover {
+  background-color: #f5f5f5;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar {
+  background-color: #667eea;
+  transition: width 0.3s ease;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+.list-group {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px 20px;
+  background-color: white;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item:hover {
+  background-color: #f9f9f9;
+  transform: translateX(2px);
+}
+
+/* Task Item */
+.task-item {
+  align-items: center;
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #667eea;
+  border-radius: 4px;
+}
+
+.form-check-input:checked {
+  background-color: #667eea;
+  border-color: #667eea;
+}
+
+.task-title {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  word-break: break-word;
+}
+
+.task-title:hover {
+  color: #667eea;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.task-actions .btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.task-actions .btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300;
+  border-color: #ffb300;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+/* Empty State */
+.empty-state {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #999;
+  margin: 0;
+}
+
+/* Alert */
+.alert {
+  border-radius: 6px;
+  border: none;
+  background-color: #e7f3ff;
+  color: #0066cc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+  }
+
+  .task-filter .btn-group {
+    flex-direction: column;
+  }
+
+  .task-filter .btn {
+    width: 100%;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+
+  .task-actions .btn {
+    width: 100%;
+  }
+}
